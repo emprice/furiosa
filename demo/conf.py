@@ -28,9 +28,6 @@ highlight_language = 'default'
 #html_logo = '_static/logo.svg'
 html_title = 'furiosa'
 
-# Add any paths that contain templates here, relative to this directory
-templates_path = ['_templates']
-
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files
 exclude_patterns = []
@@ -42,9 +39,12 @@ html_theme = 'furiosa'
 pygments_style = 'nordlight'
 pygments_dark_style = 'norddark'
 
+# Add any paths that contain templates here, relative to this directory
+templates_path = []
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory
-html_static_path = ['_static']
+html_static_path = []
 #html_favicon = 'favicon.ico'
 
 # vim: set ft=python:
