@@ -2,8 +2,8 @@ _furiosa_: A Nord twist on the Sphinx _furo_ theme
 ==================================================
 
 [![build-docs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/emprice/furiosa/gh-pages/endpoint.json)](https://github.com/emprice/furiosa/actions/workflows/main.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/emprice/furiosa/main)
+[![License: MIT](https://img.shields.io/github/license/emprice/furiosa?style=for-the-badge)](https://opensource.org/licenses/MIT)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/emprice/furiosa/main?logo=codefactor&style=for-the-badge)
 
 **A full demonstration is available [here](https://emprice.github.io/furiosa).**
 
