@@ -29,11 +29,11 @@ jobs:
     
       - name: JSON endpoint on success
         if: ${{ success() }}
-        run: python -c 'import json; print(json.dumps(dict(schemaVersion=1, label="build-docs", style="for-the-badge", logo="github", message="success", color="green")))' > $GITHUB_WORKSPACE/build/html/endpoint.json
+        run: python -c 'import json; print(json.dumps(dict(schemaVersion=1, label="build-docs", style="for-the-badge", namedLogo="github", message="success", color="green")))' > $GITHUB_WORKSPACE/build/html/endpoint.json
       
       - name: JSON endpoint on failure
         if: ${{ failure() }}
-        run: python -c 'import json; print(json.dumps(dict(schemaVersion=1, label="build-docs", style="for-the-badge", logo="github", message="failure", color="red")))' > $GITHUB_WORKSPACE/build/html/endpoint.json
+        run: python -c 'import json; print(json.dumps(dict(schemaVersion=1, label="build-docs", style="for-the-badge", namedLogo="github", message="failure", color="red")))' > $GITHUB_WORKSPACE/build/html/endpoint.json
       
       - name: Push to documentation branch
         uses: s0/git-publish-subdir-action@develop
