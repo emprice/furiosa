@@ -20,7 +20,7 @@ jobs:
       - name: Install documentation dependencies
         run: |
           pip3 install -U sphinx pygments furo
-          pip3 install -U git+https://github.com/emprice/furiosa.git
+          pip3 install $GITHUB_WORKSPACE
 
       - name: Run the documentation build
         run: |
