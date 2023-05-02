@@ -15,10 +15,10 @@
     <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Generic items" href="generic.html" /><link rel="prev" title="API documentation" href="api.html" />
 
 
-    <meta name="generator" content="sphinx-5.2.3, furo 2022.09.29"/>
+    <!-- Generated with Sphinx 6.2.1 and Furo 2023.03.27 -->
         <title>Blocks - furiosa</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -38,6 +38,8 @@
   --color-brand-primary: #5e81ac;
   --color-brand-content: #5e81ac;
   --color-highlight-on-target: #ebcb8b;
+  --color-highlighted-text: #eceff4;
+  --color-highlighted-background: #4c566a;
   --color-table-border: #bbc5d8;
   --font-size--normal: 100%;
   --font-size--small: 95%;
@@ -90,6 +92,8 @@
   --color-brand-primary: #88c0d0;
   --color-brand-content: #88c0d0;
   --color-highlight-on-target: #d08770;
+  --color-highlighted-text: #2e3440;
+  --color-highlighted-background: #ebcb8b;
   --color-table-border: rgba(216, 222, 233, 0.5);
   --font-size--normal: 100%;
   --font-size--small: 95%;
@@ -142,6 +146,8 @@
   --color-brand-primary: #88c0d0;
   --color-brand-content: #88c0d0;
   --color-highlight-on-target: #d08770;
+  --color-highlighted-text: #2e3440;
+  --color-highlighted-background: #ebcb8b;
   --color-table-border: rgba(216, 222, 233, 0.5);
   --font-size--normal: 100%;
   --font-size--small: 95%;
@@ -351,7 +357,7 @@
   <span class="sidebar-brand-text">furiosa</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -529,7 +535,7 @@ annoying.</p>
 <span class="linenos">2</span><span class="c1"># Written by @emprice</span>
 <span class="linenos">3</span>
 <span class="linenos">4</span><span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">):</span>
-<span class="linenos">5</span>    <span class="sd">&#39;&#39;&#39; This is a function that serves no useful purpose. &#39;&#39;&#39;</span>
+<span class="linenos">5</span><span class="w">    </span><span class="sd">&#39;&#39;&#39; This is a function that serves no useful purpose. &#39;&#39;&#39;</span>
 <span class="linenos">6</span>    <span class="nb">print</span><span class="p">(</span><span class="n">bar</span><span class="p">)</span>      <span class="c1"># Print the value of `bar`</span>
 <span class="linenos">7</span>    <span class="k">return</span> <span class="n">baz</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># Increment the value of `baz`</span>
 </pre></div>
@@ -580,7 +586,7 @@ annoying.</p>
 <span class="linenos"> 4</span><span class="k">class</span> <span class="nc">Math</span><span class="p">:</span>
 <span class="linenos"> 5</span>    <span class="nd">@staticmethod</span>
 <span class="linenos"> 6</span>    <span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterator</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
-<span class="linenos"> 7</span>        <span class="sd">&quot;&quot;&quot;Fibonacci series up to n&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span><span class="w">        </span><span class="sd">&quot;&quot;&quot;Fibonacci series up to n&quot;&quot;&quot;</span>
 <span class="linenos"> 8</span>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="linenos"> 9</span>        <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
 <span class="linenos">10</span>            <span class="k">yield</span> <span class="n">a</span>
@@ -595,19 +601,19 @@ annoying.</p>
 <h4>With caption<a class="headerlink" href="#with-caption" title="Permalink to this heading">#</a></h4>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text">Code Blocks can have captions, which also adds a link to it.</span><a class="headerlink" href="#id2" title="Permalink to this code">#</a></div>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;session_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shorthands&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;panes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">          </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo &#39;This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.&#39;&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">      </span><span class="p">],</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;window_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long form&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;session_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shorthands&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;panes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo &#39;This is an intentionally very long line because I want to make sure that we are handling scrollable code blocks correctly.&#39;&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;window_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long form&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -692,9 +698,7 @@ algorithm ford-fulkerson is
             
           </div>
           <div class="right-details">
-            <div class="icons">
-              
-            </div>
+            
           </div>
         </div>
         
@@ -745,9 +749,6 @@ algorithm ford-fulkerson is
     </aside>
   </div>
 </div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/furo.js"></script>
