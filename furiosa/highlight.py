@@ -26,12 +26,13 @@ class NordDark(Style):
         Name.Function :          nord.frost.greenish,
         Name.Class :             nord.frost.greenish,
         Name.Namespace :         nord.aurora.yellow,
+        Name.Tag :               'bold ' + nord.aurora.yellow,
         String :                 nd_darken(nord.aurora.green),
         String.Escape :          nd_darken(nord.aurora.orange),
     }
 
 nl_lighten = lambda hx: _hexscale(hx, 1.1)
-nl_darken  = lambda hx: _hexscale(hx, 0.7)
+nl_darken  = lambda hx: _hexscale(hx, 0.6)
 
 class NordLight(Style):
     default_style = ''
@@ -44,7 +45,7 @@ class NordLight(Style):
         Comment :                'italic ' + nord.polar_night.med,
         Comment.Preproc :        'bold noitalic ' + nl_darken(nord.aurora.purple),
         Comment.PreprocFile :    'nobold noitalic ' + nl_darken(nord.aurora.purple),
-        Keyword :                nord.frost.dark,
+        Keyword :                'bold ' + nord.frost.dark,
         Operator.Word :          nord.frost.dark,
         Number :                 nl_darken(nord.aurora.purple),
         Name :                   nord.polar_night.darkest,
@@ -53,6 +54,7 @@ class NordLight(Style):
         Name.Function :          nord.frost.greenish,
         Name.Class :             nord.frost.greenish,
         Name.Namespace :         nl_darken(nord.aurora.yellow),
+        Name.Tag :               'bold ' + nl_darken(nord.aurora.yellow),
         String :                 nl_darken(nord.aurora.green),
         String.Escape :          nl_darken(nord.aurora.orange),
     }

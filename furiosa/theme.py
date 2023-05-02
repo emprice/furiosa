@@ -79,6 +79,8 @@ def _get_default_css_variables():
 
             ### highlight color ################################################
             'color-highlight-on-target' : nord.aurora.yellow,
+            'color-highlighted-text' : nord.snow_storm.lightest,
+            'color-highlighted-background' : nord.polar_night.med,
 
             ### table colors ###################################################
             'color-table-border' : darken(nord.snow_storm.light),
@@ -102,6 +104,8 @@ def _get_default_css_variables():
 
             ### highlight color ################################################
             'color-highlight-on-target' : nord.aurora.orange,
+            'color-highlighted-text' : nord.polar_night.darkest,
+            'color-highlighted-background' : nord.aurora.yellow,
 
             ### table colors ###################################################
             'color-table-border' : _hexalpha(nord.snow_storm.light, 0.5),

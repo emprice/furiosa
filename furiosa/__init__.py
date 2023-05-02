@@ -1,4 +1,4 @@
-__version__ = '2022.10.01.dev1'
+__version__ = '2023.05.02.dev1'
 
 import os
 from furo import _html_page_context, _builder_inited, \
